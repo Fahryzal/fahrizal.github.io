@@ -1,0 +1,324 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 7px;
+}
+footer .icon a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 7px;
+}
+body{
+    height: 100vh;
+    background-color: #E5E4E2;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+/* awal navbar */
+header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1.8rem;
+    padding-left: 120px;
+    margin-block: 0.5rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin:10px;
+    font-weight: 800;
+    padding: 0.5rem 1.5rem;
+    transition: all .2s ease;
+    border-radius: 1000px;
+}
+header nav ul li:hover a{
+    background-color:#696969;
+    color:white;
+    font-weight: bold;
+}
+/* akhir navbar */
+/* this home */
+section{
+    display: flex;
+    line-height: 2rem;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    padding-block: 100px;
+    max-width: 1200px;
+}
+section .content{
+   display: flex;
+   flex: 1;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 2.5rem;
+}
+
+section .content .mypersonal{
+    flex:1;
+    margin: 1.5rem;
+}
+section .content .mypersonal .dinding{
+    display: flex;
+position: relative;
+}
+section .content .mypersonal .dinding h3{
+    position: relative;
+/* background-color: rgb(54, 102, 102); */
+}
+section .content .mypersonal .dinding .tagline{
+background: #696969;
+width: 38%;
+height: 40%;
+bottom: 0;
+margin-bottom: .2rem;
+border-radius: 35px;
+position: absolute;
+z-index: -1;
+}
+
+
+section .content .mypersonal h1{
+    letter-spacing: 0.2rem;
+}
+
+section .content .mypersonal h3{
+    letter-spacing: 0.1rem;
+}
+section .content .myphoto{
+    justify-content:center ;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin: 2.5rem;
+}
+section .content .myphoto img{
+    min-width: 200px;
+    width:350px;
+    margin-left: 125px;
+    border-radius: 1000px;
+}
+
+/* akhir home */
+
+/* awal about */
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    z-index: -2;
+}
+.aboutMe .about .tagline{
+    position: absolute;
+    bottom: 0;
+    background: #6969699f;
+width: 100%;
+height: 40%;
+z-index: -1;
+border-radius: 25px;}
+
+.aboutMe .about{
+    position: relative;
+margin-bottom: 1.5rem;}
+
+.aboutMe .about h2{
+    font-size: 2rem;
+}
+
+
+section .content-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-inline:3em;
+}
+section .content-img{
+   margin: auto;
+   width: 450px;
+   flex: 1;
+}
+section .content-img img{
+    width: 300px;
+    border-radius: 45px;
+}
+section .content-aboutme{
+display: flex;
+flex-direction: column;
+margin-left: 25px;
+flex: 2;
+}
+
+.aboutMed{
+    display: flex;
+    margin-top: 2rem;
+}
+.aboutMed .aboutd .taglined{
+    position: absolute;
+    bottom: 0;
+background: #6969699f;
+width: 100%;
+height: 40%;
+z-index: -1;
+border-radius: 25px;}
+
+.aboutMed .aboutd{
+    position: relative;
+    margin-bottom: 1.5rem;}
+
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 800;
+}
+.feature span{
+    padding: .6rem;
+    border-radius: 7px;
+    margin: .3rem;
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.content-project{
+    flex :2;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.content-project h1{
+    font-size: 4rem;   
+}
+.content-project p{
+    margin-top: 25px; 
+    line-height:2.5rem;
+    font-size: 25px;
+}
+
+.project-image{
+    flex:1;
+    margin: auto;
+}
+.project-image img{
+    width: 420px;
+}
+
+.blok{
+    width: 100%;
+    display: inline;
+}
+footer{
+    background-color: black;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 2rem;}
+footer .card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: rgb(255, 255, 255);
+}
+section .pembungkus-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section .content-contact{
+    flex: 1;
+    padding: 2.5rem;
+background: transparent;}
+
+.content-contact form .name{
+    display: flex;
+    flex: 1;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.content-contact form .pembungkus-form{
+    display: flex;
+}
+.content-contact form .name .contact-label{
+    font-weight: 800;
+    margin-bottom: .2rem;
+}
+.content-contact form .name .contact-input{
+    margin-right: 15px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:767px){
+    body{
+        background:salmon;
+        flex-direction: column;
+    }
+    section .content .myphoto img {
+        margin-left: 0;
+        order:1;}
+
+    section .content {
+        flex-direction: column;}
+
+    .project-image {
+        padding-right: 12px;}
+
+    section .content .mypersonal {
+        order: 2;}
+    
+    section .content .myphoto {
+        order:1;
+}
+section .content-about {
+    flex-direction: column;
+}
+section .content-img {
+    order: 1;
+    width: auto;
+}
+section .content-aboutme {
+    order: 2;}
+}
+section .content {
+    margin:auto;}
+@media screen and (max-width:480px){
+    body{
+        background: sandybrown;
+    }
+    .project-image {
+        flex: 0;}
+        section .content {
+            margin:auto;
+}
