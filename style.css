@@ -243,6 +243,7 @@ footer{
     flex-wrap: wrap;
     width: 100%;
     column-gap: 2rem;}
+
 footer .card{
     display: flex;
     flex-direction: column;
@@ -278,6 +279,28 @@ background: transparent;}
     padding: 0.5rem 1rem;
     width: 100%;
     border-radius: 4px;
+}
+
+.back-to-top{
+    position:fixed;
+    right: 2%;
+    bottom: 6%;
+    display: none;
+}
+
+.bola{
+    width: 55px;
+    height: 60px;
+    background-color:#7e7e7ec0;
+    border-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top .bola a i{
+    font-size:30px;
+    color: white;
 }
 
 @media screen and (max-width:767px){
@@ -321,4 +344,5 @@ section .content {
         flex: 0;}
         section .content {
             margin:auto;
+}
 }
