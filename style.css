@@ -103,6 +103,7 @@ section{
 section .content{
    display: flex;
    flex: 1;
+   overflow: hidden;
    flex-wrap: wrap;
    align-items: center;
    margin: 2.5rem;
@@ -223,6 +224,7 @@ section .content-img img{
 section .content-aboutme{
 display: flex;
 flex-direction: column;
+overflow: hidden;
 margin-left: 2rem;
 flex: 2;
 }
@@ -435,8 +437,7 @@ header nav ul div i.humburger{
     header nav ul div i.humburger{
         display: block;
         font-size: 2.5rem; 
-        margin-top: -5px;
-        background-color: rgb(255, 255, 255); 
+        margin-top: -0.3rem;
     }
 
     section .content .myphoto img {
@@ -486,7 +487,7 @@ section .content-img img{
     width: 200px;
 }
 .project-image img {
-    width: 200px;
+    width: 260px;
 }
 }
 /* @media screen and (max-width:278px){
