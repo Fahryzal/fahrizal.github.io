@@ -100,6 +100,7 @@ section{
     margin-inline: auto;
     padding-block: 100px;
     max-width: 1200px;
+    max-height: max-content;
 }
 section .content{
    display: flex;
@@ -113,6 +114,10 @@ section .content .mypersonal{
     flex:1;
     margin: 1.5rem;
 }
+section .content .mypersonal h4{
+    color: var(--six-color);
+}
+
 section .content .mypersonal .dinding{
     display: flex;
 position: relative;
@@ -167,9 +172,9 @@ i{
 
 }
 .display{
-    text-align: center;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
 }
 .margin-top{
     margin-top: 0.8rem;
@@ -185,6 +190,7 @@ i{
     margin: auto;
     width: 80%;
     z-index: -2;
+    
 }
 
 .aboutMe .about .tagline{
@@ -212,9 +218,16 @@ h2{
 }
 h1{
     color: var(--six-color);
-
 }
-
+label{
+    color: var(--six-color);
+}
+#text{
+    color: var(--six-color);
+}
+#text:hover{
+    color:rgb(80, 123, 189);
+}
 section .content-about{
     display: flex;
     align-items: center;
@@ -222,7 +235,7 @@ section .content-about{
     margin-inline:3em;
 }
 section .content-img{
-   margin: auto;
+    height: 100%;
    width: 450px;
    flex: 1;
 }
@@ -236,6 +249,10 @@ flex-direction: column;
 overflow: hidden;
 margin-left: 2rem;
 flex: 2;
+height: 100%;
+}
+section .content-aboutme .biodata-content h4{
+    color: var(--six-color);
 }
 
 .aboutMed{
@@ -260,6 +277,9 @@ border-radius: 25px;}
     flex-wrap: wrap;
     font-weight: 800;
 }
+.heig{
+    height:150px;
+}
 .feature span{
     padding: .6rem;
     border-radius: 7px;
@@ -267,9 +287,16 @@ border-radius: 25px;}
     background: var(--secondary-color);
     color: rgb(255, 255, 255);
 }
-
+#display-project{
+    display: flex;
+    flex: 2;
+}
+#flex-col{
+    display: flex;
+    flex-direction: column;
+}
 .content-project{
-    flex :2;
+    flex :1.2;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -286,13 +313,14 @@ border-radius: 25px;}
 
 .project-image{
     display: flex;
+    flex: 0.8;
     justify-content: center;
     align-items: center;
     margin: auto;
-
 }
 .project-image img{
-    width: 320px;
+    width: 100%;
+    height: 330px;
 }
 
 .blok{
@@ -456,9 +484,21 @@ header nav ul div i.humburger{
     section .content {
         flex-direction: column;}
 
+        .content-project{
+            flex :1;
+        }
     .project-image {
-        padding-right: 1.2rem;}
-
+        padding-right: 1.2rem;
+        flex: 1;
+        width: 93%;
+        height: 100%;
+        margin: auto;
+    }
+    #display-project{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
     section .content .mypersonal {
         order: 2;}
     
@@ -471,6 +511,7 @@ section .content-about {
 section .content-img {
     order: 1;
     width: auto;
+    
 }
 section .content-aboutme {
     order: 2;}
@@ -478,13 +519,14 @@ section .content-aboutme {
 section .content {
     margin:auto;}
 
+
 @media screen and (max-width:480px){
+    body{
+        background: aqua;
+    }
+
     section .content .myphoto img{
         width: 270px;}
-
-    /* .project-image {
-        width: 270px;
-    } */
     .height{
         height: 340px;
     }
@@ -497,25 +539,7 @@ section .content-about {
 section .content-img img{
     width: 250px;
 }
-.project-image img {
+/* .project-image img {
     width: 260px;
-}
-}
-/* @media screen and (max-width:278px){
-    body{
-        background: #000000;
-    }
-    section .content .myphoto img{
-        width: 180px;}
-
-    .project-image {
-        width: 180px;
-    }
-
-        section .content {
-            margin:auto;
-}
-section .content-img img {
-    width: 180px;
-}
 } */
+}
