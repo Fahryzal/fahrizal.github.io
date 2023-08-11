@@ -277,9 +277,6 @@ border-radius: 25px;}
     flex-wrap: wrap;
     font-weight: 800;
 }
-.heig{
-    height:150px;
-}
 .feature span{
     padding: .6rem;
     border-radius: 7px;
@@ -531,8 +528,9 @@ section .content {
 
 
 @media screen and (max-width:480px){
-    body{
-        background: aqua;
+
+    .heig{
+        height:210px;
     }
 
     section .content .myphoto img{
