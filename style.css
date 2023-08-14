@@ -529,9 +529,13 @@ section .content {
 
 
 @media screen and (max-width:480px){
-
+    #project,
+    #about,
+    #contact {
+        margin-top:-160px ;
+    }
     .heig{
-        height:210px;
+        height:320px;
     }
 
     section .content .myphoto img{
