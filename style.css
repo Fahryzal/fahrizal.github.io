@@ -527,6 +527,12 @@ section .content-aboutme {
 section .content {
     margin:auto;}
 
+button[type='submit'], a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius:13px;
+}
 
 @media screen and (max-width:480px){
     #project,
