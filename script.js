@@ -13,26 +13,7 @@ circle.addEventListener('click', function () {
     circle.classList.toggle('circle2');
 })
 
-// responsif navbar
-const shui = document.querySelector('.shui');
-const humburger = document.querySelector('.humburger');
-
-humburger.addEventListener('click', function () {
-    if (shui.hasAttribute('id')) {
-        shui.removeAttribute('id');
-    } else {
-        shui.setAttribute('id', 'active');
-    }
-});
-document.addEventListener('click', function (e) {
-    if (!humburger.contains(e.target) && !shui.contains(e.target)) {
-        shui.removeAttribute('id');
-    }
-});
-
-
 const sections = document.querySelectorAll("section[id]");
-console.log(sections)
 
 const scrollActive = () => {
     const scrollY = window.pageYOffset;

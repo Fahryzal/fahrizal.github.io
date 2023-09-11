@@ -64,7 +64,7 @@ header nav ul div.shui{
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 1.1rem;
     padding-left: 120px;
     margin-block: 0.5rem;
 }
@@ -82,9 +82,9 @@ header nav ul div.shui li a{
     color: var(--six-color);
     margin:10px;
     font-weight: 800;
-    padding: 0.5rem 1.5rem;
+    padding: 10px 15px;
+    font-size: 14px;
     transition: all .2s ease;
-    border-radius: 1000px;
 }
 header nav ul div.shui li:hover a{
     background-color:var(--five-color);
@@ -327,7 +327,7 @@ border-radius: 25px;}
 footer{
     background-color: var(--five-color);
     display: flex;
-    padding: 2em;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -337,6 +337,7 @@ footer .card{
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin: bottom 150px; ;
     color: rgb(255, 255, 255);
 }
 section .pembungkus-contact{
@@ -372,9 +373,8 @@ background: transparent;}
 
 .back-to-top{
     position:fixed;
-    right: 2%;
-    bottom: 6%;
-    display: none;
+    right: 1%;
+    bottom: 10%;
 }
 
 .bola{
@@ -430,9 +430,6 @@ background: transparent;}
     width: 50%;
 }
 
-header nav ul div i.humburger{
-    display: none;
-}
 input,
 textarea{
     border: none;
@@ -445,7 +442,9 @@ textarea{
     font-weight: 800;
     color: var(--six-color);
 }
-
+.active-link {
+    background-color: var(--third-color);
+  }
 @media screen and (max-width:767px){
     body{
         flex-direction: column;
@@ -454,35 +453,23 @@ textarea{
         position: relative;
     }
     header nav ul div.shui{
-        display: block; 
         padding-left: 0; 
-        position: absolute;
-        height: 85vh;
-        width: 20rem;
-        background-color: var(--third-color);
-        top: 100%;
-        right: -180%;
+        position: fixed;
+        background-color: var(--fourth-color);
+        bottom: 1.2rem;
+        left: 0;
+        border-radius: 1.25rem;
+        box-shadow: 0 8px 24px hsla(228, 66%, 54%, 0.15);
+        right: 0;
         transition: 0.4s;
+        width: 80%;
+        z-index: 99999;
+        margin: auto;
     }
-
-    #active{
-        right: -50%;
-    }
-
-    header nav ul div.shui li{
-        margin-block: 1.2rem;
-    }
-
     header nav ul div.shui li a{
         display: block;
         padding: 0.8rem;
-        border-radius: 0;
-    }
-
-    header nav ul div i.humburger{
-        display: block;
-        font-size: 2.5rem; 
-        margin-top: -0.3rem;
+        border-radius: 25px;
     }
 
     section .content .myphoto img {
@@ -523,6 +510,9 @@ section .content-img {
 }
 section .content-aboutme {
     order: 2;}
+    footer .card{
+        padding: 2rem 2rem 6rem 2rem;
+    }
 }
 section .content {
     margin:auto;}
@@ -533,9 +523,7 @@ button[type='submit'], a{
     padding: 0.3rem;
     border-radius:13px;
 }
-.active-link {
-    background-color: var(--primary-color);
-  }
+
 @media screen and (max-width:480px){
     #project,
     #about,
@@ -559,6 +547,13 @@ section .content-about {
 }
 section .content-img img{
     width: 250px;
+}
+header nav ul div.shui{
+    padding: 5px;
+    gap: 0;
+}
+header nav ul div.shui li a {
+    margin: 2px;
 }
 /* .project-image img {
     width: 260px;
