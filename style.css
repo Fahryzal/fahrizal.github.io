@@ -533,7 +533,9 @@ button[type='submit'], a{
     padding: 0.3rem;
     border-radius:13px;
 }
-
+.active-link {
+    background-color: var(--primary-color);
+  }
 @media screen and (max-width:480px){
     #project,
     #about,
